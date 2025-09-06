@@ -3,13 +3,21 @@ import {
   NavbarBrand,
   NavbarContent,
   NavbarItem,
-  Button
+  Button,
+  Dropdown,
+  DropdownTrigger,
+  DropdownMenu,
+  DropdownItem,
+  Avatar,
+  Chip
 } from '@heroui/react';
-import { Users, Target, BarChart3, Settings, UsersRound, Github, Kanban } from 'lucide-react';
+import { Users, Target, BarChart3, Settings, UsersRound, Github, Kanban, LogOut, User } from 'lucide-react';
 import { useLocation, Link } from 'react-router-dom';
+import { useAuth } from '@/modules/auth/ui/hooks/use-auth';
 
 export function Navbar() {
   const location = useLocation();
+  const { user, logout } = useAuth();
 
   const navItems = [
     { href: '/', label: 'Dashboard', icon: BarChart3 },
@@ -19,6 +27,14 @@ export function Navbar() {
     { href: '/jira', label: 'Jira', icon: Kanban },
     {  href: '/teams', label: 'Teams', icon: UsersRound },
   ];
+
+  const handleLogout = async () => {
+    try {
+      await logout();
+    } catch (error) {
+      console.error('Logout error:', error);
+    }
+  };
 
   return (
     <HeroNavbar className="sticky top-0 z-40 bg-white/80 backdrop-blur-md border-b border-gray-200/50">
@@ -67,6 +83,71 @@ export function Navbar() {
           >
             <Settings className="w-5 h-5" />
           </Button>
+        </NavbarItem>
+        
+        <NavbarItem>
+          <Dropdown placement="bottom-end">
+            <DropdownTrigger>
+              <div className="flex items-center gap-2 cursor-pointer p-1 rounded-lg hover:bg-gray-100 transition-colors">
+                <Avatar
+                  size="sm"
+                  src={user?.avatar}
+                  name={user?.name}
+                  className="w-8 h-8"
+                  fallback={<User className="w-4 h-4" />}
+                />
+                <div className="hidden sm:block text-left">
+                  <p className="text-sm font-medium text-gray-900">{user?.name}</p>
+                  <div className="flex items-center gap-2">
+                    <p className="text-xs text-gray-600">{user?.email}</p>
+                    <Chip 
+                      size="sm" 
+                      color={user?.subscriptionTier === 'enterprise' ? 'secondary' : user?.subscriptionTier === 'pro' ? 'primary' : 'default'}
+                      variant="flat"
+                      className="text-xs capitalize"
+                    >
+                      {user?.subscriptionTier}
+                    </Chip>
+                  </div>
+                </div>
+              </div>
+            </DropdownTrigger>
+            
+            <DropdownMenu 
+              aria-label="User menu"
+              disabledKeys={[]}
+            >
+              <DropdownItem
+                key="profile"
+                startContent={<User className="w-4 h-4" />}
+                description={user?.email}
+              >
+                {user?.name}
+              </DropdownItem>
+              
+              <DropdownItem
+                key="subscription"
+                startContent={
+                  <div className={`w-2 h-2 rounded-full ${
+                    user?.subscriptionTier === 'enterprise' ? 'bg-purple-500' :
+                    user?.subscriptionTier === 'pro' ? 'bg-blue-500' : 'bg-gray-500'
+                  }`} />
+                }
+                description={`${user?.subscriptionTier === 'free' ? 'Upgrade for more features' : 'Active subscription'}`}
+              >
+                {user?.subscriptionTier?.charAt(0).toUpperCase() + user?.subscriptionTier?.slice(1)} Plan
+              </DropdownItem>
+              
+              <DropdownItem
+                key="logout"
+                color="danger"
+                startContent={<LogOut className="w-4 h-4" />}
+                onPress={handleLogout}
+              >
+                Sign Out
+              </DropdownItem>
+            </DropdownMenu>
+          </Dropdown>
         </NavbarItem>
       </NavbarContent>
     </HeroNavbar>
