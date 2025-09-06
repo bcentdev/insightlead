@@ -1,12 +1,12 @@
 import React from 'react';
-import { MetricCard } from '../../../presentation/components/common/metric-card.tsx';
+import { MetricCard } from '@/shared/ui/components/metric-card.tsx';
 import { Spinner, Button, useDisclosure } from '@heroui/react';
 import { Bug, CheckCircle, Clock, Target, Zap, Activity, TrendingUp, Timer, Kanban, BarChart3 } from 'lucide-react';
-import { useJiraMetrics } from '../../../presentation/hooks/use-jira-metrics.ts';
-import { getTimeFilterDays } from './time-filter.tsx';
-import { MetricsTrendView } from './metrics-trend-view.tsx';
-import { MetricDetailModal } from './metric-detail-modal.tsx';
-import { WidgetContainer } from '../../../presentation/components/common/widget-container.tsx';
+import { useJiraMetrics } from '@/modules/jira/ui/hooks/use-jira-metrics.ts';
+import { getTimeFilterDays } from '@/modules/dashboard/ui/time-filter.tsx';
+import { MetricsTrendView } from '@/modules/dashboard/ui/metrics-trend-view.tsx';
+import { MetricDetailModal } from '@/modules/dashboard/ui/metric-detail-modal.tsx';
+import { WidgetContainer } from '@/shared/ui/components/widget-container.tsx';
 
 type JiraKPIsProps = {
   readonly projectKey: string;

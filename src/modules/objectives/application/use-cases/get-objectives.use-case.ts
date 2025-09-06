@@ -1,5 +1,5 @@
-import { ObjectiveRepository, ObjectiveFilters } from '../../../domain/repositories/objective.repository';
-import { Objective, ObjectiveCategory, ObjectivePriority, isObjectiveOverdue, isObjectiveCompleted, getDaysUntilTarget } from '../../../domain/entities/objective.entity';
+import { ObjectiveRepository, ObjectiveFilters } from '@/modules/objectives/domain/objective.repository';
+import { Objective, ObjectiveCategory, ObjectivePriority, isObjectiveOverdue, isObjectiveCompleted, getDaysUntilTarget } from '@/modules/objectives/domain/objective.entity';
 
 export type GetObjectivesRequest = {
   peerId?: string;

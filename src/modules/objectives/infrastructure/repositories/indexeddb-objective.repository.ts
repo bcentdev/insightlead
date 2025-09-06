@@ -1,7 +1,7 @@
-import { ObjectiveData } from '../../domain/entities/objective.entity';
-import { ObjectiveRepository } from '../../domain/repositories/objective.repository';
-import { objectiveProgressToNumber, createObjectiveProgress } from '../../domain/value-objects/objective-progress.vo';
-import { createDatabase } from '../database/indexeddb.helper';
+import { ObjectiveData } from '@/modules/objectives/domain/objective.entity';
+import { ObjectiveRepository } from '@/modules/objectives/domain/objective.repository';
+import { objectiveProgressToNumber, createObjectiveProgress } from '@/shared/domain/value-objects/objective-progress.vo';
+import { createDatabase } from '@/shared/infrastructure/database/indexeddb.helper';
 
 export class IndexedDBObjectiveRepository implements ObjectiveRepository {
   private readonly storeName = 'objectives';

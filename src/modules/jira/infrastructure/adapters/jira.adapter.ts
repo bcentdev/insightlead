@@ -1,5 +1,5 @@
-import { JiraPort, JiraMetricsData, JiraIssue, JiraWorklog, JiraSprint, JiraTimeMetrics } from '../../../application/ports/jira.port';
-import { Metric, createMetric, METRIC_SOURCES, METRIC_TYPES } from '../../../domain/entities/metric.entity';
+import { JiraPort, JiraMetricsData, JiraIssue, JiraWorklog, JiraSprint, JiraTimeMetrics } from '@/modules/jira/application/ports/jira.port';
+import { Metric, createMetric, METRIC_SOURCES, METRIC_TYPES } from '@/shared/domain/metric.entity';
 import { JiraClient } from './jira-client';
 
 export class JiraAdapter implements JiraPort {

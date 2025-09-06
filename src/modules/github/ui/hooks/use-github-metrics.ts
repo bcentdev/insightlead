@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback, useMemo } from 'react';
-import { githubService } from '../../infrastructure/services/github.service';
-import { getCachedGitHubMetrics, cacheGitHubMetrics, getPendingGitHubRequest, setPendingGitHubRequest } from '../services/metrics-cache.service';
+import { githubService } from '@/modules/github/infrastructure/services/github.service';
+import { getCachedGitHubMetrics, cacheGitHubMetrics, getPendingGitHubRequest, setPendingGitHubRequest } from '@/modules/github/ui/services/metrics-cache.service';
 
 // Types using functional programming approach
 type PRSize = 'small' | 'medium' | 'large' | 'xlarge';

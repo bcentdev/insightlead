@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
-import { createCreateObjectiveUseCase, CreateObjectiveDependencies } from '../../application/use-cases/objectives/create-objective.use-case';
-import { ObjectiveData, isObjectiveCompleted, isObjectiveOverdue, getDaysUntilTarget } from '../../domain/entities/objective.entity';
-import { createObjectiveProgress } from '../../domain/value-objects/objective-progress.vo';
-import { getPeerRepository, getObjectiveRepository } from '../../infrastructure/factories/repository.factory';
-import { ObjectiveRepository } from '../../domain/repositories/objective.repository';
-import { PeerRepository } from '../../domain/repositories/peer.repository';
+import { createCreateObjectiveUseCase, CreateObjectiveDependencies } from '@/modules/objectives/application/use-cases/create-objective.use-case';
+import { ObjectiveData, isObjectiveCompleted, isObjectiveOverdue, getDaysUntilTarget } from '@/modules/objectives/domain/objective.entity';
+import { createObjectiveProgress } from '@/modules/objectives/domain/objective-progress.vo';
+import { getPeerRepository, getObjectiveRepository } from '@/shared/infrastructure/factories/repository.factory';
+import { ObjectiveRepository } from '@/modules/objectives/domain/objective.repository';
+import { PeerRepository } from '@/modules/peers/domain/peer.repository';
 
 export type CreateObjectiveFormData = {
   readonly title: string;

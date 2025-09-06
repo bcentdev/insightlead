@@ -1,4 +1,4 @@
-import { ObjectiveData, ObjectiveCategory, ObjectivePriority } from '../entities/objective.entity';
+import { ObjectiveData, ObjectiveCategory, ObjectivePriority } from './objective.entity';
 
 export type ObjectiveFilters = {
   readonly peerId?: string;

@@ -16,7 +16,7 @@ import {
   Chip,
 } from '@heroui/react';
 import { Target, User, Calendar, Flag, Tag, FileText, TrendingUp } from 'lucide-react';
-import { OBJECTIVE_CATEGORIES, OBJECTIVE_PRIORITIES, ObjectiveCategory, ObjectivePriority } from '../../../domain/entities/objective.entity';
+import { OBJECTIVE_CATEGORIES, OBJECTIVE_PRIORITIES, ObjectiveCategory, ObjectivePriority } from '@/modules/objectives/domain/objective.entity';
 
 export type CreateObjectiveFormData = {
   readonly title: string;

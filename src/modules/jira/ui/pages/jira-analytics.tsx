@@ -1,8 +1,8 @@
 import React from 'react';
-import { JiraIssues } from '../components/jira/jira-issues';
+import { JiraIssues } from '@/modules/jira/ui/components/jira-issues';
 import { Spinner, Card, CardBody, Button } from '@heroui/react';
 import { Kanban, Settings } from 'lucide-react';
-import { useDashboardData } from '../hooks/use-dashboard-data';
+import { useDashboardData } from '@/modules/dashboard/ui/hooks/use-dashboard-data';
 
 const JiraAnalyticsPage = () => {
   const {

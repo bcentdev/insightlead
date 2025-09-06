@@ -1,6 +1,6 @@
-import { TeamData } from '../../domain/entities/team.entity';
-import { TeamRepository } from '../../domain/repositories/team.repository';
-import { createDatabase } from '../database/indexeddb.helper';
+import { TeamData } from '@/modules/teams/domain/team.entity';
+import { TeamRepository } from '@/modules/teams/domain/team.repository';
+import { createDatabase } from '@/shared/infrastructure/database/indexeddb.helper';
 
 export class IndexedDBTeamRepository implements TeamRepository {
   private readonly storeName = 'teams';

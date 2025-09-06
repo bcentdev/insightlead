@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Card, CardBody, CardHeader, Button, Spinner } from '@heroui/react';
 import { Calendar, GitPullRequest, GitMerge, Activity, TrendingUp } from 'lucide-react';
-import { githubService } from '../../../infrastructure/services/github.service';
+import { githubService } from '@/modules/github/infrastructure/services/github.service';
 import { format, subDays, eachDayOfInterval, isToday, isYesterday } from 'date-fns';
 
 // Types using functional programming approach

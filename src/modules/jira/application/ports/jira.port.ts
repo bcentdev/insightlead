@@ -1,4 +1,4 @@
-import { Metric } from '../../domain/entities/metric.entity';
+import { Metric } from '@/shared/domain/metric.entity';
 
 export interface JiraIssue {
   id: string;

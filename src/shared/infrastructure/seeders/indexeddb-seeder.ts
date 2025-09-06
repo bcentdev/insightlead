@@ -1,11 +1,11 @@
-import { IndexedDBPeerRepository } from '../repositories/indexeddb-peer.repository';
-import { IndexedDBTeamRepository } from '../repositories/indexeddb-team.repository';
-import { IndexedDBObjectiveRepository } from '../repositories/indexeddb-objective.repository';
-import { createPeer, PEER_ROLES, SENIORITY_LEVELS } from '../../domain/entities/peer.entity';
-import { createTeam, addTeamMember, changeTeamLead } from '../../domain/entities/team.entity';
-import { createObjective } from '../../domain/entities/objective.entity';
-import { createGitHubUsername } from '../../domain/value-objects/github-username.vo';
-import { createObjectiveProgress } from '../../domain/value-objects/objective-progress.vo';
+import { IndexedDBPeerRepository } from '@/modules/peers/infrastructure/repositories/indexeddb-peer.repository';
+import { IndexedDBTeamRepository } from '@/modules/teams/infrastructure/repositories/indexeddb-team.repository';
+import { IndexedDBObjectiveRepository } from '@/modules/objectives/infrastructure/repositories/indexeddb-objective.repository';
+import { createPeer, PEER_ROLES, SENIORITY_LEVELS } from '@/modules/peers/domain/peer.entity';
+import { createTeam, addTeamMember, changeTeamLead } from '@/modules/teams/domain/team.entity';
+import { createObjective } from '@/modules/objectives/domain/objective.entity';
+import { createGitHubUsername } from '@/shared/domain/value-objects/github-username.vo';
+import { createObjectiveProgress } from '@/shared/domain/value-objects/objective-progress.vo';
 
 export const seedIndexedDB = async (): Promise<void> => {
   console.log('🌱 Starting IndexedDB seeding...');

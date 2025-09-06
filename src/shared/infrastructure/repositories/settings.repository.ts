@@ -1,4 +1,4 @@
-import { createDatabase } from '../database/indexeddb.helper';
+import { createDatabase } from '@/shared/infrastructure/database/indexeddb.helper';
 
 export type GitHubRepository = {
   id: string;

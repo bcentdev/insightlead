@@ -1,5 +1,5 @@
-import { GitHubPort, GitHubMetricsData, GitHubPullRequest, GitHubIssue, GitHubCommit, GitHubReview } from '../../../application/ports/github.port';
-import { Metric, createMetric, METRIC_SOURCES, METRIC_TYPES } from '../../../domain/entities/metric.entity';
+import { GitHubPort, GitHubMetricsData, GitHubPullRequest, GitHubIssue, GitHubCommit, GitHubReview } from '@/modules/github/application/ports/github.port';
+import { Metric, createMetric, METRIC_SOURCES, METRIC_TYPES } from '@/shared/domain/metric.entity';
 import { GitHubClient } from './github-client';
 
 // Pure function to group items by date

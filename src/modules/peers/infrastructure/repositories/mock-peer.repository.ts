@@ -1,5 +1,5 @@
-import { PeerRepository } from '../../domain/repositories/peer.repository';
-import { PeerData } from '../../domain/entities/peer.entity';
+import { PeerRepository } from '@/modules/peers/domain/peer.repository';
+import { PeerData } from '@/modules/peers/domain/peer.entity';
 
 // Shared state across all repository instances
 let mockPeersData: PeerData[] = [];

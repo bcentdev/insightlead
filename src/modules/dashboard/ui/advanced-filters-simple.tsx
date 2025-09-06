@@ -19,7 +19,7 @@ import {
   Kanban,
   Hash
 } from 'lucide-react';
-import { WidgetContainer } from '../../../presentation/components/common/widget-container.tsx';
+import { WidgetContainer } from '@/shared/ui/components/widget-container';
 
 type FilterValue = {
   readonly timePeriod?: string;

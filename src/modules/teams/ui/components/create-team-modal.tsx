@@ -20,9 +20,9 @@ import {
   AutocompleteItem
 } from '@heroui/react';
 import { Users, Building, User, FileText, ExternalLink } from 'lucide-react';
-import { jiraService } from '../../../infrastructure/services/jira.service';
-import { initializeJiraConfig } from '../../../infrastructure/services/jira-config.service';
-import type { JiraProject } from '../../../infrastructure/adapters/jira/jira-client';
+import { jiraService } from '@/modules/jira/infrastructure/services/jira.service';
+import { initializeJiraConfig } from '@/modules/jira/infrastructure/services/jira-config.service';
+import type { JiraProject } from '@/modules/jira/infrastructure/adapters/jira-client';
 
 // Types using functional programming approach
 type CreateTeamFormData = {

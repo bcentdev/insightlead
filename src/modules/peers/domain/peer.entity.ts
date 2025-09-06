@@ -1,5 +1,5 @@
 import { v4 as uuidv4 } from 'uuid';
-import { GitHubUsername } from '../value-objects/github-username.vo';
+import { GitHubUsername } from '@/modules/peers/domain/value-objects/github-username.vo';
 
 export const PEER_ROLES = {
   FRONTEND_DEVELOPER: 'frontend_developer',

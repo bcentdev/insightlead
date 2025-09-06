@@ -14,7 +14,7 @@ import {
   Chip
 } from '@heroui/react';
 import { User, Mail, Github, AtSign, Briefcase, Award, Image, TestTube, Users } from 'lucide-react';
-import { PeerRole, Seniority, PEER_ROLES, SENIORITY_LEVELS } from '../../../domain/entities/peer.entity';
+import { PeerRole, Seniority, PEER_ROLES, SENIORITY_LEVELS } from '@/modules/peers/domain/peer.entity';
 
 type AddPeerModalProps = {
   readonly isOpen: boolean;

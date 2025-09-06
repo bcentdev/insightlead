@@ -13,10 +13,10 @@ import {
   Link
 } from '@heroui/react';
 import { Github, AtSign, TestTube, Save, AlertCircle, CheckCircle, RefreshCw, Clock, ExternalLink, Trash2, Search, Plus, X, GitBranch } from 'lucide-react';
-import { SettingsRepository, GitHubRepository } from '../../infrastructure/repositories/settings.repository';
-import { githubService } from '../../infrastructure/services/github.service';
-import { jiraService } from '../../infrastructure/services/jira.service';
-import { clearAllData } from '../../infrastructure/factories/repository.factory';
+import { SettingsRepository, GitHubRepository } from '@/shared/infrastructure/repositories/settings.repository';
+import { githubService } from '@/modules/github/infrastructure/services/github.service';
+import { jiraService } from '@/modules/jira/infrastructure/services/jira.service';
+import { clearAllData } from '@/shared/infrastructure/factories/repository.factory';
 
 export default function SettingsPage() {
   const [githubToken, setGithubToken] = useState('');

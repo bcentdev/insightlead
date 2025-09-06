@@ -1,11 +1,11 @@
-import { PeerRepository } from '../../domain/repositories/peer.repository';
-import { TeamRepository } from '../../domain/repositories/team.repository';
-import { ObjectiveRepository } from '../../domain/repositories/objective.repository';
-import { createPeer, PEER_ROLES, SENIORITY_LEVELS } from '../../domain/entities/peer.entity';
-import { createTeam, addTeamMember, changeTeamLead } from '../../domain/entities/team.entity';
-import { createObjective } from '../../domain/entities/objective.entity';
-import { createGitHubUsername } from '../../domain/value-objects/github-username.vo';
-import { createObjectiveProgress } from '../../domain/value-objects/objective-progress.vo';
+import { PeerRepository } from '@/modules/peers/domain/peer.repository';
+import { TeamRepository } from '@/modules/teams/domain/team.repository';
+import { ObjectiveRepository } from '@/modules/objectives/domain/objective.repository';
+import { createPeer, PEER_ROLES, SENIORITY_LEVELS } from '@/modules/peers/domain/peer.entity';
+import { createTeam, addTeamMember, changeTeamLead } from '@/modules/teams/domain/team.entity';
+import { createObjective } from '@/modules/objectives/domain/objective.entity';
+import { createGitHubUsername } from '@/shared/domain/value-objects/github-username.vo';
+import { createObjectiveProgress } from '@/shared/domain/value-objects/objective-progress.vo';
 
 const seedTeams = async (teamRepository: TeamRepository): Promise<string> => {
   const team = createTeam({

@@ -1,9 +1,9 @@
 import { useState, useEffect, useMemo, useCallback } from 'react';
-import { usePeers } from './use-peers';
-import { useObjectives } from './use-objectives';
-import { useTeams } from './use-teams';
-import { SettingsRepository } from '../../infrastructure/repositories/settings.repository';
-import { initializeJiraConfig } from '../../infrastructure/services/jira-config.service';
+import { usePeers } from '@/modules/peers/ui/hooks/use-peers';
+import { useObjectives } from '@/modules/objectives/ui/hooks/use-objectives';
+import { useTeams } from '@/modules/teams/ui/hooks/use-teams';
+import { SettingsRepository } from '@/shared/infrastructure/repositories/settings.repository';
+import { initializeJiraConfig } from '@/modules/jira/infrastructure/services/jira-config.service';
 
 type ConfigStatus = {
   hasToken: boolean;

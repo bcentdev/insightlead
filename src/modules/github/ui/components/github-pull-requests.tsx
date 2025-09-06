@@ -9,9 +9,9 @@ import {
   Link
 } from '@heroui/react';
 import { Github, GitPullRequest, GitMerge, Clock, Settings, ExternalLink } from 'lucide-react';
-import { MetricCard } from '../common/metric-card';
-import { SettingsRepository } from '../../../infrastructure/repositories/settings.repository';
-import { githubService } from '../../../infrastructure/services/github.service';
+import { MetricCard } from '@/shared/ui/components/metric-card';
+import { SettingsRepository } from '@/shared/infrastructure/repositories/settings.repository';
+import { githubService } from '@/modules/github/infrastructure/services/github.service';
 
 interface GitHubPullRequestsProps {
   teamMembers?: string[];  // Changed from single username to array of team members

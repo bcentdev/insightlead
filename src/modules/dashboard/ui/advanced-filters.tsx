@@ -13,7 +13,7 @@ import {
   PopoverContent,
   Divider
 } from '@heroui/react';
-import { WidgetContainer } from '../../../presentation/components/common/widget-container.tsx';
+import { WidgetContainer } from '@/shared/ui/components/widget-container';
 import { 
   Filter, 
   X, 

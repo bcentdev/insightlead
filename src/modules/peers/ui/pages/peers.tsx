@@ -1,9 +1,9 @@
 import { useState, useEffect } from 'react';
 import { Button, Input, Select, SelectItem, Card, CardBody, CardHeader, Avatar, Chip, Progress, Spinner, useDisclosure } from '@heroui/react';
 import { Plus, Search, Github, ExternalLink, Calendar, AlertCircle, Edit } from 'lucide-react';
-import { AddPeerModal, AddPeerFormData, TeamOption } from '../components/peers/add-peer-modal';
-import { usePeers, PeerWithMetrics } from '../hooks/use-peers';
-import { useTeams } from '../hooks/use-teams';
+import { AddPeerModal, AddPeerFormData, TeamOption } from '@/modules/peers/ui/components/add-peer-modal';
+import { usePeers, PeerWithMetrics } from '@/modules/peers/ui/hooks/use-peers';
+import { useTeams } from '@/modules/teams/ui/hooks/use-teams';
 
 export default function PeersPage() {
   const { peers, isLoading, error, addPeer, updatePeer, defaultTeamId } = usePeers();

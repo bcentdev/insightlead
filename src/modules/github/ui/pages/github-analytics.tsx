@@ -1,10 +1,10 @@
 import React from 'react';
-import { GitHubPullRequests } from '../components/github/github-pull-requests';
-import { PRStatistics } from '../components/github/pr-statistics';
-import { ActivityGraph } from '../components/github/activity-graph';
+import { GitHubPullRequests } from '@/modules/github/ui/components/github-pull-requests';
+import { PRStatistics } from '@/modules/github/ui/components/pr-statistics';
+import { ActivityGraph } from '@/modules/github/ui/components/activity-graph';
 import { Spinner, Card, CardBody, Button, Chip, Tabs, Tab } from '@heroui/react';
 import { AlertCircle, Settings, BarChart3, Github } from 'lucide-react';
-import { useDashboardData } from '../hooks/use-dashboard-data';
+import { useDashboardData } from '@/modules/dashboard/ui/hooks/use-dashboard-data';
 
 const GitHubAnalyticsPage = () => {
   const {

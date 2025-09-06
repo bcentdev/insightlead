@@ -1,6 +1,6 @@
-import { ObjectiveRepository } from '../../../domain/repositories/objective.repository';
-import { updateObjectiveProgress, addObjectiveTag, isObjectiveCompleted } from '../../../domain/entities/objective.entity';
-import { objectiveProgressFromPercentage } from '../../../domain/value-objects/objective-progress.vo';
+import { ObjectiveRepository } from '@/modules/objectives/domain/objective.repository';
+import { updateObjectiveProgress, addObjectiveTag, isObjectiveCompleted } from '@/modules/objectives/domain/objective.entity';
+import { objectiveProgressFromPercentage } from '@/shared/domain/value-objects/objective-progress.vo';
 
 export type TrackProgressRequest = {
   readonly objectiveId: string;

@@ -1,8 +1,8 @@
-import { createPeer, PeerRole, Seniority } from '../../../domain/entities/peer.entity';
-import { createGitHubUsername } from '../../../domain/value-objects/github-username.vo';
-import { addTeamMember } from '../../../domain/entities/team.entity';
-import { PeerRepository } from '../../../domain/repositories/peer.repository';
-import { TeamRepository } from '../../../domain/repositories/team.repository';
+import { createPeer, PeerRole, Seniority } from '@/modules/peers/domain/peer.entity';
+import { createGitHubUsername } from '@/shared/domain/value-objects/github-username.vo';
+import { addTeamMember } from '@/modules/teams/domain/team.entity';
+import { PeerRepository } from '@/modules/peers/domain/peer.repository';
+import { TeamRepository } from '@/modules/teams/domain/team.repository';
 
 export type AddPeerRequest = {
   readonly name: string;

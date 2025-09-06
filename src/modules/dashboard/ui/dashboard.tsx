@@ -1,16 +1,16 @@
 import React, { useState, useCallback } from 'react';
-import { TeamOverview } from './team-overview.tsx';
-import { TeamMembersFilter } from './team-members-filter.tsx';
-import { GitHubKPIs } from './github-kpis.tsx';
-import { JiraKPIs } from './jira-kpis.tsx';
-import { TimeFilter } from './time-filter.tsx';
+import { TeamOverview } from '@/modules/dashboard/ui/team-overview.tsx';
+import { TeamMembersFilter } from '@/modules/dashboard/ui/team-members-filter.tsx';
+import { GitHubKPIs } from '@/modules/dashboard/ui/github-kpis.tsx';
+import { JiraKPIs } from '@/modules/dashboard/ui/jira-kpis.tsx';
+import { TimeFilter } from '@/modules/dashboard/ui/time-filter.tsx';
 import { CustomizableDashboard } from '@/modules/dashboard/ui/customizable-dashboard.tsx';
-import { AdvancedFiltersSimple } from './advanced-filters-simple.tsx';
-import { LoadingSpinner } from '../../../presentation/components/common/loading-spinner.tsx';
-import { SearchModal } from '../../../presentation/components/common/search-modal.tsx';
+import { AdvancedFiltersSimple } from '@/modules/dashboard/ui/advanced-filters-simple.tsx';
+import { LoadingSpinner } from '@/shared/ui/components/loading-spinner.tsx';
+import { SearchModal } from '@/shared/ui/components/search-modal.tsx';
 import { Card, CardBody, Button, Chip } from '@heroui/react';
 import { AlertCircle, Settings, BarChart3, Search } from 'lucide-react';
-import { useDashboardData } from '../../../presentation/hooks/use-dashboard-data.ts';
+import { useDashboardData } from '@/shared/ui/hooks/use-dashboard-data.ts';
 
 const DashboardPage = () => {
   const [selectedMember, setSelectedMember] = useState<string | null>(null);

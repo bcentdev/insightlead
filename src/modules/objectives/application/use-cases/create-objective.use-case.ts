@@ -1,7 +1,7 @@
-import { createObjective, ObjectiveCategory, ObjectivePriority, ObjectiveData } from '../../../domain/entities/objective.entity';
-import { ObjectiveProgress } from '../../../domain/value-objects/objective-progress.vo';
-import { ObjectiveRepository } from '../../../domain/repositories/objective.repository';
-import { PeerRepository } from '../../../domain/repositories/peer.repository';
+import { createObjective, ObjectiveCategory, ObjectivePriority, ObjectiveData } from '@/modules/objectives/domain/objective.entity';
+import { ObjectiveProgress } from '@/shared/domain/value-objects/objective-progress.vo';
+import { ObjectiveRepository } from '@/modules/objectives/domain/objective.repository';
+import { PeerRepository } from '@/modules/peers/domain/peer.repository';
 
 export type CreateObjectiveRequest = {
   readonly title: string;

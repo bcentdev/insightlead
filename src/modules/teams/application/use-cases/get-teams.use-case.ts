@@ -1,6 +1,6 @@
-import { TeamRepository } from '../../../domain/repositories/team.repository';
-import { PeerRepository } from '../../../domain/repositories/peer.repository';
-import { TeamData } from '../../../domain/entities/team.entity';
+import { TeamRepository } from '@/modules/teams/domain/team.repository';
+import { PeerRepository } from '@/modules/peers/domain/peer.repository';
+import { TeamData } from '@/modules/teams/domain/team.entity';
 
 export type TeamSummary = {
   readonly id: string;

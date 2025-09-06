@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
 import { Button, Select, SelectItem, Input, Spinner, Card, CardBody, useDisclosure } from '@heroui/react';
 import { Plus, Search, AlertCircle } from 'lucide-react';
-import { ObjectiveCard } from '../components/objectives/objective-card';
-import { CreateObjectiveModal, CreateObjectiveFormData, PeerOption } from '../components/objectives/create-objective-modal';
-import { useObjectives, ObjectiveWithPeer } from '../hooks/use-objectives';
-import { usePeers } from '../hooks/use-peers';
+import { ObjectiveCard } from '@/modules/objectives/ui/components/objective-card';
+import { CreateObjectiveModal, CreateObjectiveFormData, PeerOption } from '@/modules/objectives/ui/components/create-objective-modal';
+import { useObjectives, ObjectiveWithPeer } from '@/modules/objectives/ui/hooks/use-objectives';
+import { usePeers } from '@/modules/peers/ui/hooks/use-peers';
 
 export default function ObjectivesPage() {
   const { objectives, isLoading, error, createObjective } = useObjectives();

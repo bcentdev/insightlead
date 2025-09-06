@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { Button, Card, CardBody, CardHeader, Avatar, Chip, Spinner, useDisclosure } from '@heroui/react';
 import { Plus, Users, AlertCircle, Crown, Edit } from 'lucide-react';
-import { CreateTeamModal, CreateTeamFormData, PeerOption } from '../components/teams/create-team-modal';
-import { useTeams } from '../hooks/use-teams';
-import { usePeers } from '../hooks/use-peers';
+import { CreateTeamModal, CreateTeamFormData, PeerOption } from '@/modules/teams/ui/components/create-team-modal';
+import { useTeams } from '@/modules/teams/ui/hooks/use-teams';
+import { usePeers } from '@/modules/peers/ui/hooks/use-peers';
 
 export default function TeamsPage() {
   const { teams, isLoading, error, createTeam, updateTeam } = useTeams();

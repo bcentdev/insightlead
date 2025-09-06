@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import { Card, CardBody, CardHeader, Button, Spinner, Chip, Link, Avatar } from '@heroui/react';
 import { Bug, Zap, Settings, ExternalLink, Calendar, User, Filter, Kanban } from 'lucide-react';
-import { jiraService } from '../../../infrastructure/services/jira.service';
+import { jiraService } from '@/modules/jira/infrastructure/services/jira.service';
 import { formatDistanceToNow } from 'date-fns';
-import type { JiraIssue } from '../../../infrastructure/adapters/jira/jira-client';
+import type { JiraIssue } from '@/modules/jira/infrastructure/adapters/jira/jira-client';
 
 // Types using functional programming approach
 type JiraIssuesProps = {

@@ -1,16 +1,16 @@
-import { PeerRepository } from '../../domain/repositories/peer.repository';
-import { TeamRepository } from '../../domain/repositories/team.repository';
-import { ObjectiveRepository } from '../../domain/repositories/objective.repository';
+import { PeerRepository } from '@/modules/peers/domain/peer.repository';
+import { TeamRepository } from '@/modules/teams/domain/team.repository';
+import { ObjectiveRepository } from '@/modules/objectives/domain/objective.repository';
 
-import { IndexedDBPeerRepository } from '../repositories/indexeddb-peer.repository';
-import { IndexedDBTeamRepository } from '../repositories/indexeddb-team.repository';
-import { IndexedDBObjectiveRepository } from '../repositories/indexeddb-objective.repository';
+import { IndexedDBPeerRepository } from '@/modules/peers/infrastructure/repositories/indexeddb-peer.repository';
+import { IndexedDBTeamRepository } from '@/modules/teams/infrastructure/repositories/indexeddb-team.repository';
+import { IndexedDBObjectiveRepository } from '@/modules/objectives/infrastructure/repositories/indexeddb-objective.repository';
 
-import { createMockPeerRepository, clearMockPeersData } from '../repositories/mock-peer.repository';
-import { createMockTeamRepository, clearMockTeamsData } from '../repositories/mock-team.repository';
-import { createMockObjectiveRepository, clearMockObjectivesData } from '../repositories/mock-objective.repository';
-import { seedMockData } from '../seeders/mock-data.seeder';
-import { seedIndexedDB } from '../seeders/indexeddb-seeder';
+import { createMockPeerRepository, clearMockPeersData } from '@/modules/peers/infrastructure/repositories/mock-peer.repository';
+import { createMockTeamRepository, clearMockTeamsData } from '@/modules/teams/infrastructure/repositories/mock-team.repository';
+import { createMockObjectiveRepository, clearMockObjectivesData } from '@/modules/objectives/infrastructure/repositories/mock-objective.repository';
+import { seedMockData } from '@/shared/infrastructure/seeders/mock-data.seeder';
+import { seedIndexedDB } from '@/shared/infrastructure/seeders/indexeddb-seeder';
 
 export interface RepositoryContainer {
   peerRepository: PeerRepository;

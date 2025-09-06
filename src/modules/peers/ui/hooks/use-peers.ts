@@ -1,13 +1,13 @@
 import { useState, useEffect } from 'react';
-import { PeerData, updatePeerProfile } from '../../domain/entities/peer.entity';
-import { createAddPeerUseCase } from '../../application/use-cases/peers/add-peer.use-case';
-import { gitHubUsernameToString } from '../../domain/value-objects/github-username.vo';
-import { AddPeerFormData } from '../components/peers/add-peer-modal';
-import { getPeerRepository, getTeamRepository, getObjectiveRepository } from '../../infrastructure/factories/repository.factory';
-import { PeerRepository } from '../../domain/repositories/peer.repository';
-import { TeamRepository } from '../../domain/repositories/team.repository';
-import { ObjectiveRepository } from '../../domain/repositories/objective.repository';
-import { fetchTeamMetrics, getPeerMetricsFromTeam, type TeamMetrics } from '../../infrastructure/services/metrics.service';
+import { PeerData, updatePeerProfile } from '@/modules/peers/domain/peer.entity';
+import { createAddPeerUseCase } from '@/modules/peers/application/use-cases/add-peer.use-case';
+import { gitHubUsernameToString } from '@/modules/github/domain/github-username.vo';
+import { AddPeerFormData } from '@/modules/peers/ui/components/add-peer-modal';
+import { getPeerRepository, getTeamRepository, getObjectiveRepository } from '@/shared/infrastructure/factories/repository.factory';
+import { PeerRepository } from '@/modules/peers/domain/peer.repository';
+import { TeamRepository } from '@/modules/teams/domain/team.repository';
+import { ObjectiveRepository } from '@/modules/objectives/domain/objective.repository';
+import { fetchTeamMetrics, getPeerMetricsFromTeam, type TeamMetrics } from '@/shared/infrastructure/services/metrics.service';
 
 export interface PeerWithMetrics {
   id: string;

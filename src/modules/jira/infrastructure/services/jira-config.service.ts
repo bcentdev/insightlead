@@ -1,6 +1,6 @@
-import { jiraService } from './jira.service';
-import { SettingsRepository } from '../repositories/settings.repository';
-import { createJiraGraphQLClient } from '../adapters/jira/jira-graphql-client';
+import { jiraService } from '@/modules/jira/infrastructure/services/jira.service';
+import { SettingsRepository } from '@/shared/infrastructure/repositories/settings.repository';
+import { createJiraGraphQLClient } from '@/modules/jira/infrastructure/adapters/jira/jira-graphql-client';
 
 type JiraConfigSettings = {
   readonly baseUrl: string;

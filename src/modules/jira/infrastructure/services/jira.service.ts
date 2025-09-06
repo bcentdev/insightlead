@@ -1,5 +1,5 @@
-import { createJiraGraphQLClient, type JiraGraphQLConfig, type JiraIssueGraphQL, type JiraProjectGraphQL } from '../adapters/jira/jira-graphql-client';
-import { type JiraIssue, type JiraProject } from '../adapters/jira/jira-client';
+import { createJiraGraphQLClient, type JiraGraphQLConfig, type JiraIssueGraphQL, type JiraProjectGraphQL } from '@/modules/jira/infrastructure/adapters/jira/jira-graphql-client';
+import { type JiraIssue, type JiraProject } from '@/modules/jira/infrastructure/adapters/jira/jira-client';
 
 // Types using functional programming approach
 type JiraServiceConfig = {

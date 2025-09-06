@@ -1,5 +1,5 @@
-import { ObjectiveRepository } from '../../domain/repositories/objective.repository';
-import { ObjectiveData } from '../../domain/entities/objective.entity';
+import { ObjectiveRepository } from '@/modules/objectives/domain/objective.repository';
+import { ObjectiveData } from '@/modules/objectives/domain/objective.entity';
 
 // Shared state across all repository instances
 let mockObjectivesData: ObjectiveData[] = [];

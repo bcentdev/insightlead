@@ -1,6 +1,6 @@
 import { Users, Target, TrendingUp, CheckCircle, Calendar } from 'lucide-react';
-import { MetricCard } from '../../../presentation/components/common/metric-card.tsx';
-import { WidgetContainer } from '../../../presentation/components/common/widget-container.tsx';
+import { MetricCard } from '@/shared/ui/components/metric-card.tsx';
+import { WidgetContainer } from '@/shared/ui/components/widget-container.tsx';
 
 type TeamMember = {
   readonly id: string;

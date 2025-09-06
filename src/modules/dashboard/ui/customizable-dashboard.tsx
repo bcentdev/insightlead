@@ -20,7 +20,7 @@ import {
 import { CSS } from '@dnd-kit/utilities';
 import { Button, Card, CardBody, Switch } from '@heroui/react';
 import { Eye, EyeOff, Settings, RotateCcw } from 'lucide-react';
-import { SectionHeader } from '../../../presentation/components/common/section-header.tsx';
+import { SectionHeader } from '@/shared/ui/components/section-header.tsx';
 
 type DashboardWidget = {
   readonly id: string;

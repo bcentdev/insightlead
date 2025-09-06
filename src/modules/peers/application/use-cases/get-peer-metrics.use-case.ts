@@ -1,6 +1,6 @@
-import { PeerRepository } from '../../../domain/repositories/peer.repository';
-import { MetricRepository, MetricAggregation } from '../../../domain/repositories/metric.repository';
-import { ObjectiveRepository } from '../../../domain/repositories/objective.repository';
+import { PeerRepository } from '@/modules/peers/domain/peer.repository';
+import { MetricRepository, MetricAggregation } from '@/shared/domain/metric.repository';
+import { ObjectiveRepository } from '@/modules/objectives/domain/objective.repository';
 
 export type GetPeerMetricsRequest = {
   peerId: string;

@@ -1,4 +1,4 @@
-import { TeamData } from '../entities/team.entity';
+import { TeamData } from './team.entity';
 
 export type TeamRepository = {
   readonly save: (team: TeamData) => Promise<TeamData>;

@@ -1,4 +1,4 @@
-import { PeerData } from '../entities/peer.entity';
+import { PeerData } from './peer.entity';
 
 export interface PeerRepository {
   save(peer: PeerData): Promise<void>;

@@ -1,11 +1,11 @@
 import { useState, useEffect } from 'react';
-import { createCreateTeamUseCase, CreateTeamDependencies } from '../../application/use-cases/teams/create-team.use-case';
-import { createGetTeamsUseCase, GetTeamsDependencies, TeamSummary } from '../../application/use-cases/teams/get-teams.use-case';
-import { createAssignTeamLeadUseCase, AssignTeamLeadDependencies } from '../../application/use-cases/teams/assign-team-lead.use-case';
-import { updateTeamDetails } from '../../domain/entities/team.entity';
-import { getPeerRepository, getTeamRepository } from '../../infrastructure/factories/repository.factory';
-import { PeerRepository } from '../../domain/repositories/peer.repository';
-import { TeamRepository } from '../../domain/repositories/team.repository';
+import { createCreateTeamUseCase, CreateTeamDependencies } from '@/modules/teams/application/use-cases/create-team.use-case';
+import { createGetTeamsUseCase, GetTeamsDependencies, TeamSummary } from '@/modules/teams/application/use-cases/get-teams.use-case';
+import { createAssignTeamLeadUseCase, AssignTeamLeadDependencies } from '@/modules/teams/application/use-cases/assign-team-lead.use-case';
+import { updateTeamDetails } from '@/modules/teams/domain/team.entity';
+import { getPeerRepository, getTeamRepository } from '@/shared/infrastructure/factories/repository.factory';
+import { PeerRepository } from '@/modules/peers/domain/peer.repository';
+import { TeamRepository } from '@/modules/teams/domain/team.repository';
 
 export type CreateTeamFormData = {
   readonly id?: string;

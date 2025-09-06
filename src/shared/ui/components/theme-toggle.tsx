@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, Tooltip } from '@heroui/react';
 import { Sun, Moon } from 'lucide-react';
-import { useTheme } from '../../context/theme-context';
+import { useTheme } from '@/shared/ui/context/theme-context';
 
 type ThemeToggleProps = {
   readonly size?: 'sm' | 'md' | 'lg';

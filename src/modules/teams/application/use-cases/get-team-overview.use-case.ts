@@ -1,8 +1,8 @@
-import { TeamRepository } from '../../../domain/repositories/team.repository';
-import { PeerRepository } from '../../../domain/repositories/peer.repository';
-import { MetricRepository, MetricAggregation } from '../../../domain/repositories/metric.repository';
-import { ObjectiveRepository } from '../../../domain/repositories/objective.repository';
-import { Peer } from '../../../domain/entities/peer.entity';
+import { TeamRepository } from '@/modules/teams/domain/team.repository';
+import { PeerRepository } from '@/modules/peers/domain/peer.repository';
+import { MetricRepository, MetricAggregation } from '@/shared/domain/metric.repository';
+import { ObjectiveRepository } from '@/modules/objectives/domain/objective.repository';
+import { Peer } from '@/modules/peers/domain/peer.entity';
 
 export interface GetTeamOverviewRequest {
   teamId: string;

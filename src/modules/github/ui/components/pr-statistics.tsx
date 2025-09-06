@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react';
 import { Card, CardBody, CardHeader, Spinner } from '@heroui/react';
 import { GitPullRequest, GitMerge, Clock, Users, TrendingUp, Activity, Award } from 'lucide-react';
-import { MetricCard } from '../common/metric-card';
-import { githubService } from '../../../infrastructure/services/github.service';
+import { MetricCard } from '@/shared/ui/components/metric-card';
+import { githubService } from '@/modules/github/infrastructure/services/github.service';
 
 // Types using functional programming approach
 type PRSize = 'small' | 'medium' | 'large' | 'xlarge';

@@ -1,5 +1,5 @@
-import { TeamRepository } from '../../domain/repositories/team.repository';
-import { TeamData } from '../../domain/entities/team.entity';
+import { TeamRepository } from '@/modules/teams/domain/team.repository';
+import { TeamData } from '@/modules/teams/domain/team.entity';
 
 // Shared state across all repository instances
 let mockTeamsData: TeamData[] = [];

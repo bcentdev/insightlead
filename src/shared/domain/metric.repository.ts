@@ -1,4 +1,4 @@
-import { MetricData, MetricSource, MetricType } from '../entities/metric.entity';
+import { MetricData, MetricSource, MetricType } from './metric.entity';
 
 export interface MetricFilters {
   peerId?: string;

@@ -1,7 +1,7 @@
-import { PeerData } from '../../domain/entities/peer.entity';
-import { PeerRepository } from '../../domain/repositories/peer.repository';
-import { gitHubUsernameToString, createGitHubUsername } from '../../domain/value-objects/github-username.vo';
-import { createDatabase } from '../database/indexeddb.helper';
+import { PeerData } from '@/modules/peers/domain/peer.entity';
+import { PeerRepository } from '@/modules/peers/domain/peer.repository';
+import { gitHubUsernameToString, createGitHubUsername } from '@/shared/domain/value-objects/github-username.vo';
+import { createDatabase } from '@/shared/infrastructure/database/indexeddb.helper';
 
 export class IndexedDBPeerRepository implements PeerRepository {
   private readonly storeName = 'peers';
