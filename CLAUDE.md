@@ -62,6 +62,33 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 - Custom integrations
 - Priority support
 
+## 📐 Architecture Rules
+
+### Module Organization
+**MANDATORY**: Each module MUST contain all 4 layers of hexagonal architecture:
+
+```
+src/modules/[module-name]/
+├── domain/          # Entities, Value Objects, Domain Logic
+├── application/     # Use Cases, Application Services, Ports
+├── infrastructure/  # Repositories, External Services, Adapters
+└── ui/             # Components, Hooks, Pages (Presentation Layer)
+```
+
+### Import Rules
+**MANDATORY**: ALL imports must use absolute paths with TypeScript path mapping:
+- ✅ `import { User } from '@/modules/auth/domain/user.entity'`
+- ❌ `import { User } from '../../domain/user.entity'`
+
+**Path Aliases Available**:
+- `@/*` → `./src/*` (all imports use this single alias)
+
+### Dependencies Flow
+- **Domain**: No external dependencies (pure business logic)
+- **Application**: Depends only on Domain
+- **Infrastructure**: Depends on Domain and Application
+- **UI**: Can depend on all layers but prefers Application
+
 ## 🏗️ Implementation Plan
 
 ### Next Critical Steps (Priority Order)
