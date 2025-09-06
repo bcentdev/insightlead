@@ -1,0 +1,36 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "plugins": [
+    "oxc",
+    "import",
+    "react",
+    "typescript",
+    "unicorn",
+    "promise"
+  ],
+  "categories": {
+    "correctness": "error"
+  },
+  "ignorePatterns": [
+    ".now/*",
+    "**/*.css",
+    "**/.changeset",
+    "**/dist",
+    "esm/*",
+    "public/*",
+    "tests/*",
+    "scripts/*",
+    "**/*.config.js",
+    "**/.DS_Store",
+    "**/node_modules",
+    "**/coverage",
+    "**/.next",
+    "**/build",
+    "!**/.commitlintrc.cjs",
+    "!**/.lintstagedrc.cjs",
+    "!**/jest.config.js",
+    "!**/plopfile.js",
+    "!**/react-shim.js",
+    "!**/tsup.config.ts"
+  ]
+}
