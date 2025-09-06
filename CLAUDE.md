@@ -129,6 +129,26 @@ export const createRepositories = () => {
 - **Developer-to-Enterprise**: Individual devs introduce to their companies
 - **SEO & Community**: GitHub stars, developer content, conference talks
 
+## 🤖 Development Workflow
+
+**IMPORTANT**: Always create commits after completing tasks or features. Each significant change should be documented with a descriptive commit message following the pattern:
+
+```bash
+git add .
+git commit -m "$(cat <<'EOF'
+[type]: [description]
+
+[detailed explanation of changes]
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>
+EOF
+)"
+```
+
+**Commit Types**: feat, fix, docs, style, refactor, test, chore
+
 ## Environment Variables
 
 The application supports the following environment variables:
