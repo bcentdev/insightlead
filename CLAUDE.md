@@ -131,7 +131,7 @@ export const createRepositories = () => {
 
 ## 🤖 Development Workflow
 
-**IMPORTANT**: Always create commits after completing tasks or features. Each significant change should be documented with a descriptive commit message following the pattern:
+**IMPORTANT**: Always create commits after completing tasks or features. Each significant change should be documented with a descriptive commit message following conventional commits pattern:
 
 ```bash
 git add .
@@ -147,7 +147,23 @@ EOF
 )"
 ```
 
-**Commit Types**: feat, fix, docs, style, refactor, test, chore
+**Conventional Commit Types**:
+- **feat**: New features or functionality
+- **fix**: Bug fixes
+- **docs**: Documentation changes only
+- **style**: Code style changes (formatting, missing semi-colons, etc.)
+- **refactor**: Code refactoring without adding features or fixing bugs
+- **test**: Adding or updating tests
+- **chore**: Maintenance tasks (build process, dependencies, etc.)
+- **perf**: Performance improvements
+- **ci**: CI/CD pipeline changes
+
+**Examples**:
+- `feat: add authentication system with JWT tokens`
+- `fix: resolve dashboard loading state issue`
+- `docs: update README with deployment instructions`
+- `refactor: extract repository factory pattern`
+- `test: add unit tests for domain entities`
 
 ## Environment Variables
 
