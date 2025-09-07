@@ -18,7 +18,7 @@
 2. **Build Configuration**
    ```
    Framework preset: None
-   Build command: npm run build:prod
+   Build command: bun run build:prod
    Build output directory: dist
    Root directory: /
    ```

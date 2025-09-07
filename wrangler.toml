@@ -3,13 +3,12 @@ name = "insightlead"
 compatibility_date = "2023-05-18"
 
 [build]
-command = "npm run build:prod"
+command = "bun run build:prod"
 cwd = ""
 watch_dir = "src"
 
 [build.environment]
-NODE_VERSION = "18"
-NPM_VERSION = "9"
+BUN_VERSION = "latest"
 
 [[build.environment_variables]]
 NODE_ENV = "production"
