@@ -1,0 +1,17 @@
+# Cloudflare Pages configuration
+name = "insightlead"
+compatibility_date = "2023-05-18"
+
+[build]
+command = "bun run build:prod"
+cwd = ""
+watch_dir = "src"
+
+[build.environment]
+NODE_VERSION = "18"
+NPM_VERSION = "9"
+
+[[build.environment_variables]]
+NODE_ENV = "production"
+VITE_USE_MOCK_DATA = "false"
+VITE_SEED_INDEXEDDB = "false"

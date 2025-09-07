@@ -63,7 +63,7 @@ export class PasswordService {
       errors.push('Password must contain at least one number');
     }
 
-    if (/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>?]/.test(password)) {
+    if (/[!@#$%^&*()_+\-=[\]{};':"\\|,.<>?]/.test(password)) {
       score += 1;
     } else {
       errors.push('Password must contain at least one special character');
