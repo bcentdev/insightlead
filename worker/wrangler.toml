@@ -1,0 +1,27 @@
+name = "insightlead"
+main = "src/index.ts"
+compatibility_date = "2024-05-31"
+compatibility_flags = ["nodejs_compat"]
+
+# Custom domain
+[[routes]]
+pattern = "insight-lead.app"
+custom_domain = true
+
+# Static assets binding for frontend
+[assets]
+directory = "../dist"
+binding = "ASSETS"
+
+# D1 Database binding
+[[d1_databases]]
+binding = "DB"
+database_name = "insightlead-db"
+database_id = "283ecdc9-cfe0-42c0-8d7d-044a2745775d"
+migrations_dir = "db/migrations"
+
+# Environment variables
+[vars]
+NODE_ENV = "production"
+VITE_STORAGE_TYPE = "cloud"
+VITE_API_BASE_URL = "https://insight-lead.app"

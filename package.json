@@ -25,6 +25,7 @@
     "class-variance-authority": "^0.7.0",
     "date-fns": "^3.6.0",
     "framer-motion": "11.15.0",
+    "hono": "^4.9.6",
     "lucide-react": "^0.454.0",
     "react": "18.3.1",
     "react-dom": "18.3.1",
@@ -38,6 +39,7 @@
     "zustand": "^4.5.5"
   },
   "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250906.0",
     "@types/node": "20.5.7",
     "@types/react": "18.3.3",
     "@types/react-dom": "18.3.0",
@@ -45,12 +47,15 @@
     "@vitejs/plugin-react": "4.4.1",
     "@vitest/ui": "^2.1.2",
     "autoprefixer": "10.4.21",
+    "drizzle-kit": "^0.31.4",
+    "drizzle-orm": "^0.44.5",
     "globals": "16.0.0",
     "oxlint": "^1.1.0",
     "postcss": "8.5.3",
     "typescript": "5.6.3",
     "vite": "6.3.4",
     "vite-tsconfig-paths": "4.3.2",
-    "vitest": "^2.1.2"
+    "vitest": "^2.1.2",
+    "wrangler": "^4.34.0"
   }
 }
