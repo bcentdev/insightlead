@@ -10,7 +10,7 @@ import { LoadingSpinner } from '@/shared/ui/components/loading-spinner.tsx';
 import { SearchModal } from '@/shared/ui/components/search-modal.tsx';
 import { Card, CardBody, Button, Chip } from '@heroui/react';
 import { AlertCircle, Settings, BarChart3, Search } from 'lucide-react';
-import { useDashboardData } from '@/shared/ui/hooks/use-dashboard-data.ts';
+import { useDashboardData } from '@/modules/dashboard/ui/hooks/use-dashboard-data.ts';
 
 const DashboardPage = () => {
   const [selectedMember, setSelectedMember] = useState<string | null>(null);

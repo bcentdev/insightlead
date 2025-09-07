@@ -4,8 +4,8 @@ import { ObjectiveRepository } from '@/modules/objectives/domain/objective.repos
 import { createPeer, PEER_ROLES, SENIORITY_LEVELS } from '@/modules/peers/domain/peer.entity';
 import { createTeam, addTeamMember, changeTeamLead } from '@/modules/teams/domain/team.entity';
 import { createObjective } from '@/modules/objectives/domain/objective.entity';
-import { createGitHubUsername } from '@/shared/domain/value-objects/github-username.vo';
-import { createObjectiveProgress } from '@/shared/domain/value-objects/objective-progress.vo';
+import { createGitHubUsername } from '@/modules/github/domain/github-username.vo';
+import { createObjectiveProgress } from '@/modules/objectives/domain/objective-progress.vo';
 
 const seedTeams = async (teamRepository: TeamRepository): Promise<string> => {
   const team = createTeam({

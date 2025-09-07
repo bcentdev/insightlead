@@ -1,5 +1,5 @@
-import { GitHubClient } from '@/modules/github/infrastructure/adapters/github/github-client';
-import { createGitHubAdapter } from '@/modules/github/infrastructure/adapters/github/github.adapter';
+import { GitHubClient } from '@/modules/github/infrastructure/adapters/github-client';
+import { createGitHubAdapter } from '@/modules/github/infrastructure/adapters/github.adapter';
 import { GitHubPort } from '@/modules/github/application/ports/github.port';
 import { SettingsRepository } from '@/shared/infrastructure/repositories/settings.repository';
 

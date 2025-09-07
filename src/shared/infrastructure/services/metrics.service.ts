@@ -1,6 +1,6 @@
-import { githubService } from './github.service';
-import { jiraService } from './jira.service';
-import { initializeJiraConfig } from './jira-config.service';
+import { githubService } from '@/modules/github/infrastructure/services/github.service';
+import { jiraService } from '@/modules/jira/infrastructure/services/jira.service';
+import { initializeJiraConfig } from '@/modules/jira/infrastructure/services/jira-config.service';
 
 // Types for real metrics
 export type PeerMetrics = {
