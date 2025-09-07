@@ -18,6 +18,7 @@
     "@dnd-kit/sortable": "^10.0.0",
     "@dnd-kit/utilities": "^3.2.2",
     "@heroui/react": "^2.4.6",
+    "@heroui/theme": "^2.4.21",
     "@internationalized/date": "^3.8.2",
     "@octokit/rest": "^20.0.2",
     "class-variance-authority": "^0.7.0",
