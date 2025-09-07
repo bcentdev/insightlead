@@ -1,5 +1,5 @@
 import { createPeer, PeerRole, Seniority } from '@/modules/peers/domain/peer.entity';
-import { createGitHubUsername } from '@/shared/domain/value-objects/github-username.vo';
+import { createGitHubUsername } from '@/modules/github/domain/github-username.vo';
 import { addTeamMember } from '@/modules/teams/domain/team.entity';
 import { PeerRepository } from '@/modules/peers/domain/peer.repository';
 import { TeamRepository } from '@/modules/teams/domain/team.repository';

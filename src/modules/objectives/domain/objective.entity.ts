@@ -1,5 +1,5 @@
 import { v4 as uuidv4 } from 'uuid';
-import { ObjectiveProgress, isObjectiveProgressComplete } from '@/shared/domain/value-objects/objective-progress.vo';
+import { ObjectiveProgress, isObjectiveProgressComplete } from '@/modules/objectives/domain/objective-progress.vo';
 
 export const OBJECTIVE_CATEGORIES = {
   TECHNICAL_SKILLS: 'technical_skills',

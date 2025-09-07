@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback, useMemo } from 'react';
 import { jiraService } from '@/modules/jira/infrastructure/services/jira.service';
 import { initializeJiraConfig } from '@/modules/jira/infrastructure/services/jira-config.service';
-import { getCachedJiraMetrics, cacheJiraMetrics, getPendingJiraRequest, setPendingJiraRequest } from '@/modules/jira/ui/services/metrics-cache.service';
+import { getCachedJiraMetrics, cacheJiraMetrics, getPendingJiraRequest, setPendingJiraRequest } from '@/shared/ui/services/metrics-cache.service';
 
 // Types using functional programming approach
 type JiraIssueType = 'Bug' | 'Story' | 'Task' | 'Spike' | 'Epic' | string;

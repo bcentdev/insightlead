@@ -1,6 +1,6 @@
 import { ObjectiveData } from '@/modules/objectives/domain/objective.entity';
 import { ObjectiveRepository } from '@/modules/objectives/domain/objective.repository';
-import { objectiveProgressToNumber, createObjectiveProgress } from '@/shared/domain/value-objects/objective-progress.vo';
+import { objectiveProgressToNumber, createObjectiveProgress } from '@/modules/objectives/domain/objective-progress.vo';
 import { createDatabase } from '@/shared/infrastructure/database/indexeddb.helper';
 
 export class IndexedDBObjectiveRepository implements ObjectiveRepository {

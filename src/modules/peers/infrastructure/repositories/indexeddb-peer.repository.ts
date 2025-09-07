@@ -1,6 +1,6 @@
 import { PeerData } from '@/modules/peers/domain/peer.entity';
 import { PeerRepository } from '@/modules/peers/domain/peer.repository';
-import { gitHubUsernameToString, createGitHubUsername } from '@/shared/domain/value-objects/github-username.vo';
+import { gitHubUsernameToString, createGitHubUsername } from '@/modules/github/domain/github-username.vo';
 import { createDatabase } from '@/shared/infrastructure/database/indexeddb.helper';
 
 export class IndexedDBPeerRepository implements PeerRepository {

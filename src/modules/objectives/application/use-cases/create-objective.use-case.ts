@@ -1,5 +1,5 @@
 import { createObjective, ObjectiveCategory, ObjectivePriority, ObjectiveData } from '@/modules/objectives/domain/objective.entity';
-import { ObjectiveProgress } from '@/shared/domain/value-objects/objective-progress.vo';
+import { ObjectiveProgress } from '@/modules/objectives/domain/objective-progress.vo';
 import { ObjectiveRepository } from '@/modules/objectives/domain/objective.repository';
 import { PeerRepository } from '@/modules/peers/domain/peer.repository';
 

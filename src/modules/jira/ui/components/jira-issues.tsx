@@ -3,7 +3,7 @@ import { Card, CardBody, CardHeader, Button, Spinner, Chip, Link, Avatar } from 
 import { Bug, Zap, Settings, ExternalLink, Calendar, User, Filter, Kanban } from 'lucide-react';
 import { jiraService } from '@/modules/jira/infrastructure/services/jira.service';
 import { formatDistanceToNow } from 'date-fns';
-import type { JiraIssue } from '@/modules/jira/infrastructure/adapters/jira/jira-client';
+import type { JiraIssue } from '@/modules/jira/infrastructure/adapters/jira-client';
 
 // Types using functional programming approach
 type JiraIssuesProps = {
