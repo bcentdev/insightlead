@@ -3,7 +3,7 @@ name = "insightlead"
 compatibility_date = "2023-05-18"
 
 [build]
-command = "bun run build:prod"
+command = "bun install && bun run build:prod"
 cwd = ""
 watch_dir = "src"
 
